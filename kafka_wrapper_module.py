@@ -59,7 +59,7 @@ class KafkaWrapperModule:
         str = '===============================================================================\n'
         str += "KafkaWrapperModule\n"
         str += "ip: " + self.ip + "\n"
-        str += "port: " + self.port + "\n"
+        str += "port: " + str(self.port) + "\n"
         str += "in_topic: " + self.in_topic + "\n"
         str += "out_topic: " + self.out_topic + "\n"
         str += "command_list: " + ','.join(self.command_list) + "\n"
