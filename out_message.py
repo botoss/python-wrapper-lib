@@ -28,10 +28,10 @@ class OutMessage:
             self.text = 'none'
     
     def __str__(self):
-        str = '===============================================================================\n'
-        str += "OutMessage\n"
-        str += "key: " + self.key + "\n"
-        str += "connector_id: " + self.connector_id + "\n"
-        str += "text: " + self.text + "\n"
-        str += '===============================================================================\n'
-        return str
+        output = '===============================================================================\n'
+        output += "OutMessage\n"
+        output += "key: " + self.key + "\n"
+        output += "connector_id: " + self.connector_id + "\n"
+        output += "text: " + self.text + "\n"
+        output += '===============================================================================\n'
+        return output

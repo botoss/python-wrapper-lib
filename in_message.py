@@ -33,11 +33,11 @@ class InMessage:
             self.params = 'none'
 
     def __str__(self):
-        str = '===============================================================================\n'
-        str += "InMessage\n"
-        str += "key: " + self.key + "\n"
-        str += "connector_id: " + self.connector_id + "\n"
-        str += "command: " + self.command + "\n"
-        str += "params: " + ','.join(self.params) + "\n"
-        str += '===============================================================================\n'
-        return str
+        output = '===============================================================================\n'
+        output += "InMessage\n"
+        output += "key: " + self.key + "\n"
+        output += "connector_id: " + self.connector_id + "\n"
+        output += "command: " + self.command + "\n"
+        output += "params: " + ','.join(self.params) + "\n"
+        output += '===============================================================================\n'
+        return output

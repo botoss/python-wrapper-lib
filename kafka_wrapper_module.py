@@ -56,12 +56,12 @@ class KafkaWrapperModule:
         self.wait_for_command(self.command_list)
 
     def __str__(self):
-        str = '===============================================================================\n'
-        str += "KafkaWrapperModule\n"
-        str += "ip: " + self.ip + "\n"
-        str += "port: " + str(self.port) + "\n"
-        str += "in_topic: " + self.in_topic + "\n"
-        str += "out_topic: " + self.out_topic + "\n"
-        str += "command_list: " + ','.join(self.command_list) + "\n"
-        str += '===============================================================================\n'
-        return str
+        output = '===============================================================================\n'
+        output += "KafkaWrapperModule\n"
+        output += "ip: " + self.ip + "\n"
+        output += "port: " + str(self.port) + "\n"
+        output += "in_topic: " + self.in_topic + "\n"
+        output += "out_topic: " + self.out_topic + "\n"
+        output += "command_list: " + ','.join(self.command_list) + "\n"
+        output += '===============================================================================\n'
+        return output
