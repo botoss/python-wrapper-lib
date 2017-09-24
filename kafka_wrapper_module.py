@@ -26,7 +26,7 @@ class KafkaWrapperModule:
             sys.exit(-1)
 
         try:
-            self.consumer = KafkaConsumer(bootstrap_servers=':'.join([ip, port]), auto_offset_reset='earliest')
+            self.consumer = KafkaConsumer(bootstrap_servers=':'.join([ip, port]), auto_offset_reset='latest')
             self.consumer.subscribe([self.in_topic])
         except Exception as e:
             print "Error 2"
